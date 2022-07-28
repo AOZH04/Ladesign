@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<title>Contacts</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220728165039">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="img/favicon.ico">
+
+</head>
+
+<body>
+	<div class="wrapper contacts_wrapper">
+		<header data-scroll="200" data-scroll-show="300" class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<li class="menu__item_logo">
+						<a class="logo" href="index.html" class="menu__link">
+							<img class="logowhite" src="img/logo.svg" alt="">
+							<img class="logoblack" src="img/logoblack.svg" alt="">
+						</a>
+					</li>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a data-goto=".portfolio" data-goto-header data-goto-top="0" href="index.html" class="menu__link">
+									Портфолио
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="price.html" class="menu__link">
+									Услуги и цены
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="contacts.html" class="menu__link">
+									Контакты
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<li class="menu__item_phone">
+						<a class="phone" href="tel:+79184123443">+7 918 412-34-43</a>
+					</li>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+				</div>
+				<div data-goto=".wrapper" data-goto-top="0" class="goto_top"></div>
+			</div>
+		</header>
+		<main class="main">
+			<div class="main__container">
+				<div class="contacts_block">
+					<div class="main_title">
+						Контакты
+					</div>
+					<div class="description_body">
+						<div class="left_block write_to_us">
+							<div class="main_title left_title main_titlemini">
+								Напишите нам
+							</div>
+							<p>Мы всегда рады ответить на интересующие вас вопросы. Заполните форму и наш специалист свяжется с
+								вами.</p>
+							<form class="write_to_us_form" data-dev data-popup-message="#popup3" method="POST" enctype="multipart/form-data" action="#">
+								<div class="input__box">
+									<input class="input_name" data-required data-validate type="text" name="name" autocomplete="off" placeholder="Ваше имя" data-error="Поле обязательно для ввода">
+								</div>
+								<div class="input__box">
+									<input class="input_mail" data-required="email" data-validate type="text" name="email" autocomplete="off" placeholder="Ваша эл.почта" data-error="Поле обязательно для ввода">
+								</div>
+
+								<div class="input__box">
+									<input class="input_question" type="text" name="form[]" autocomplete="off" placeholder="Ваш вопрос" data-error="Поле обязательно для ввода">
+								</div>
+
+								<div class="load_file">
+									<input class="input__file" multiple id="input__file" type="file" name="userfoto">
+									<label for="input__file" class="input__file-button">
+										<span class="input__file-icon-wrapper">
+											<img class="input__file-icon" src="img/screpka.svg" alt="Выбрать файл" width="25">
+										</span>
+										<span class="input__file-button-text">Прикрепить файл</span>
+									</label>
+								</div>
+								<div class="form_footer">
+									<button class="btnpurple write_to_us_btn">
+										отправить
+									</button>
+									<div class="privacy_policy">
+										<p>Нажимая на кнопку, я даю <a data-popup="#popup2" href="#">согласие на обработку <br>
+												персональных данных</a>
+										</p>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="right_block our_contacts">
+							<div class="main_title left_title main_titlemini">
+								Наши контакты
+							</div>
+							<ul>
+								<li class="contacts_phone"><a href="tel:+79184123443">+7 918 412-34-43</a></li>
+								<li class="contacts_mail"><a href="mailto:ladesign@inbox.ru">ladesign@inbox.ru</a></li>
+								<li class="contacts_time">Пн - Сб 9:00 — 18:00</li>
+								<li class="contacts_address">г. Краснодар, <br> ул. Братьев Игнатовых, 1/1</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<ul class="social__links">
+					<li class="social__link"><a href="#">houzz</a></li>
+					<li class="social__link"><a href="#">instagram</a></li>
+				</ul>
+				<div class="footer__text">© 2022 LA Design, all rights reserved.</div>
+			</div>
+		</footer>
+	</div>
+	<div id="popup1" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<form class="form_contacts" data-dev data-popup-message="#popup3" method="POST" action="#" enctype="multipart/form-data">
+					<div class="form_title">
+						оставЬТЕ СВОИ КОНТАКТЫ. мЫ СВЯЖЕМСЯ С ВАМИ И ОБСУДИМ ВАШ ПРОЕКТ
+					</div>
+					<div class="form_inputs">
+						<div class="input__box">
+							<input class="form_name" data-required data-validate placeholder="Ваше имя" autocomplete="off" type="text" name="name" data-error="Поле обязательно для ввода">
+						</div>
+						<div class="input__box">
+							<input class="form_phone" data-required data-validate placeholder="Ваш телефон" autocomplete="off" type="phone" name="tel" data-error="Поле обязательно для ввода">
+						</div>
+
+					</div>
+					<div class="form_footer">
+						<button class="form_button btnpurple">
+							отправить
+						</button>
+						<div class="privacy_policy">
+							<p>Нажимая на кнопку, я даю <a data-popup="#popup2" href="#">согласие на обработку <br> персональных
+									данных</a></p>
+						</div>
+						<div class="form_rate">
+
+						</div>
+					</div>
+				</form>
+			</div>
+			<button data-close type="button" class="popup__close"></button>
+		</div>
+	</div>
+	<div id="popup2" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="privacy_text">
+					Предоставляя свои персональные данные Покупатель даёт согласие на обработку, хранение и использование своих
+					персональных данных на основании ФЗ № 152-ФЗ «О персональных данных» от 27.07.2006 г. в следующих целях:
+
+					Регистрации Пользователя на сайте
+					Осуществление клиентской поддержки
+					Получения Пользователем информации о маркетинговых событиях
+					Выполнение Продавцом обязательств перед Покупателем
+					Проведения аудита и прочих внутренних исследований с целью повышения качества предоставляемых услуг.
+					Под персональными данными подразумевается любая информация личного характера, позволяющая установить
+					личность
+					Покупателя такая как:
+
+					Фамилия, Имя, Отчество
+					Дата рождения
+					Контактный телефон
+					Адрес электронной почты
+					Почтовый адрес
+					Персональные данные Покупателей хранятся исключительно на электронных носителях и обрабатываются с
+					использованием автоматизированных систем, за исключением случаев, когда неавтоматизированная обработка
+					персональных данных необходима в связи с исполнением требований законодательства.
+
+					Продавец обязуется не передавать полученные персональные данные третьим лицам, за исключением следующих
+					случаев:
+
+					По запросам уполномоченных органов государственной власти РФ только по основаниям и в порядке, установленным
+					законодательством РФ
+					Стратегическим партнерам, которые работают с Продавцом для предоставления продуктов и услуг, или тем из них,
+					которые помогают Продавцу реализовывать продукты и услуги потребителям. Мы предоставляем третьим лицам
+					минимальный объем персональных данных, необходимый только для оказания требуемой услуги или проведения
+					необходимой транзакции.
+					Продавец оставляет за собой право вносить изменения в одностороннем порядке в настоящие правила, при
+					условии,
+					что изменения не противоречат действующему законодательству РФ. Изменения условий настоящих правил вступают
+					в
+					силу после их публикации на Сайте.
+				</div>
+			</div>
+			<button data-close type="button" class="popup__close"></button>
+		</div>
+	</div>
+	<div id="popup3" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content checked_content">
+				<div class="main_title checked">
+					Ваша Заявка успешно <br> отправлена
+				</div>
+				<p>
+					Спасибо, что обратились в нашу студию. <br> Наш дизайнер с вами свяжется
+				</p>
+				<ul class="social__links">
+					<li class="social__link"><a href="#">houzz</a></li>
+					<li class="social__link"><a href="#">instagram</a></li>
+				</ul>
+			</div>
+
+			<button data-close type="button" class="popup__close"></button>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20220728165039"></script>
+</body>
+
+</html>
