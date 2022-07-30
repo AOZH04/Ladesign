@@ -2101,7 +2101,7 @@ body::after {
 .contacts_block {
   margin-top: 150px;
   margin-bottom: 125px;
-  min-height: 80vh;
+  min-height: 80vh!important;
 }
 @media (max-width: 768px) {
   .contacts_block {
